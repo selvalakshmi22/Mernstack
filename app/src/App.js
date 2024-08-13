@@ -6,10 +6,10 @@ import{createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 const router = createBrowserRouter(
   [
-    { path: "home", element: <Home/>}
-    { path: "About", element: <About/>}
+    { "path": "home", element: <Home/>},
+    { "path": "About", element: <About/>}
   ]
-)
+);
 function App() {
   const getUser = ()=>{
 
