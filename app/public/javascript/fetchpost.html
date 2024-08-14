@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="select">
+        <option>var1</option>
+        <option>var2</option>
+    </select>
+    <button onclick="postapi()">postapi</button>
+    <script>
+        async function postapi (){
+        //public  url is given
+        let data = {
+            "name":"selvalakshmi",
+            "job":"developer"
+        }
+        let res = await fetch ("https://reqres.in/api/users",{"method":"post",body:JSON.stringify(data)});
+        let json=await res.json();
+        console.log(json);
+        console.log(res);
+        }
+       // document.getElementById('but').addEventListener('click',getapi);
+            </script>
+</body>
+</html>

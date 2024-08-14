@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        function print(){}
+    </script>
+</head>
+<body>
+    <input type="text" id="txt">
+    <button id="rrr">click me</button>
+    <select id="sel1">
+        <option value="hello">Hello</option>
+        <option value="goodbye">Goodbye</option>
+        <option value="SeeYou">See you...</option>
+      </select>
+    
+</body>
+<script>
+    document.getElementById("rrr").addEventListener('click',()=>{;
+    let val=document.getElementById("txt").value;
+    console.log(val);
+    })
+    //access the value and also handle event use below code
+    document.getElementById("sel1").addEventListener('change',(e)=>{;
+    //let val=document.getElementById("sel1").value;
+    console.log(e.target.value);
+})
+</script>
+</html>
